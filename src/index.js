@@ -17,3 +17,7 @@ submit.addEventListener('click', (e) => {
 refresh.addEventListener('click', () => {
   util.displayLeaderboard();
 });
+
+window.addEventListener('load', () => {
+  util.displayLeaderboard();
+});

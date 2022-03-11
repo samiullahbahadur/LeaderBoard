@@ -46,11 +46,13 @@ h2 {
   width: 450px;
   padding: 10px;
   overflow-y: scroll;
+  box-shadow: -5px -5px 15px #bcd1cc5d, 5px 5px 15px #bcd1cc5d;
 }
 
 li {
   font-size: 20px;
   list-style-type: none;
+  border-radius: 10px;
 }
 
 .scores > li:nth-child(even) {
@@ -85,6 +87,7 @@ li {
   row-gap: 2px;
   justify-content: center;
   align-items: center;
+  padding: 5px;
 }
 
 #one {
@@ -111,7 +114,7 @@ form {
   position: relative;
   background-color: #fff;
   border-radius: 10px;
-  height: 250px;
+  height: 240px;
   width: 350px;
   padding: 30px 20px;
   display: flex;
