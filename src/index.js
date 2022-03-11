@@ -1,19 +1,23 @@
-import './style.css';
+import "./style.css";
 
-import * as util from './module/app/app.js';
+import * as util from "./module/app/app.js";
 
-const name = document.getElementById('name');
-const score = document.getElementById('score');
-const submit = document.getElementById('submit');
-const refresh = document.getElementById('refresh');
+const name = document.getElementById("name");
+const score = document.getElementById("score");
+const submit = document.getElementById("submit");
+const refresh = document.getElementById("refresh");
 
-submit.addEventListener('click', (e) => {
+submit.addEventListener("click", (e) => {
   e.preventDefault();
   util.addToLeaderboard({ user: name.value, score: score.value });
-  score.value = '';
-  name.value = '';
+  score.value = "";
+  name.value = "";
 });
 
-refresh.addEventListener('click', () => {
+refresh.addEventListener("click", () => {
+  util.displayLeaderboard();
+});
+
+window.addEventListener("load", () => {
   util.displayLeaderboard();
 });
