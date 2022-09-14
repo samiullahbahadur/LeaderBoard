@@ -26,8 +26,8 @@ Browser. Any modern browser should do the job.
 
 Run the command npm install to install all project's dependencies.
 
-#Live Likn
-[Live Demo].(https://dev--amazing-semifreddo-98cee0.netlify.app/)
+## Live Demo
+- [Live Demo Link](https://dev--amazing-semifreddo-98cee0.netlify.app/)
 
 ### Deployment
 
